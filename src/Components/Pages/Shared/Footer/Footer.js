@@ -9,11 +9,11 @@ const Footer = () => {
                 <div className="fw-bolder">
                     <h3>Contact Information</h3>
                     <h4><i className="fas fa-phone-volume"></i>+0194458988005</h4>
-                    <p className="fw-bolder">CARHOUSE,<br /> House No.54<br />Sheikh Kamal Sarani,<br />Road No. 16,<br />Rangs square (5th & 6th floor), <br />Basundhara, Dhaka 1209, Bangladesh</p>
+                    <p className="fw-bolder">MIXMATCHING,<br /> House No.54<br />Sheikh Kamal Sarani,<br />Road No. 16,<br />Rangs square (5th & 6th floor), <br />Basundhara, Dhaka 1209, Bangladesh</p>
                 </div>
                 <div className="fw-bolder">
-                    <h1>CARHOUSE</h1>
-                    <p>If You are a Car Lover then CARHOUSE is always with you!</p>
+                    <h1>MIXMATCHING</h1>
+                    <p>If You are a Car Lover then MIXMATCHING is always with you!</p>
                     <div>
                         <div className=" d-flex justify-content-center">
                             <a rel="noopener noreferrer"
