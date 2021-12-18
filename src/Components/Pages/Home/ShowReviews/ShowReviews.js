@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Rating from 'react-rating';
+import './ShowReviews.css';
 
 const ShowReviews = () => {
     const [reviews, setReviews] = useState([]);
@@ -18,7 +19,7 @@ const ShowReviews = () => {
                 {
                     reviews.map(review =>
                         <div key={review._id} className="col-12 col-lg-4 p-2">
-                            <div className="bg-light rounded-3 py-3 w-100">
+                            <div className="bg-light rounded-3 py-3 w-100 mx-4 reviews">
                                 <h2>{review.name}</h2>
                                 <h2>{review.email}</h2>
                                 <h5>{review.description}</h5>
