@@ -1,7 +1,6 @@
-/* .addProduct{
-    color: black;
-    
-} */
+.addProduct{
+    color: white;
+}
 .addProduct form{
     display: flex;
     flex-direction: column;
@@ -12,10 +11,9 @@
 .addProduct form input, textarea{
     width:35%;
     margin: 10px 0px;
-    background-color: rgb(32, 15, 29);
+    /* border: rgb(37, 35, 25); */
     text-align: center;
     border-radius: 25px;
-    border: white;
 }
 .addProduct form input{
     padding: 1%;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
 import "./Navigation.css";
 
@@ -24,13 +24,13 @@ const Navigation = () => {
                         {
                             user.email ?
                                 <div>
-                                    {/* <NavLink as={Link} className="text-white" to="/dashBoard">DashBoard</NavLink> */}
+                                    <NavLink as={Link} to="/dashBoard">DashBoard</NavLink>
                                     <Button onClick={logout} variant="light">Logout</Button>
                                     <Navbar.Text>
                                         Signed in as: <a href="#login">{user.displayName}</a>
                                     </Navbar.Text>
                                 </div> :
-                                <Nav.Link as={Link} className="text-white" to="/login">Login</Nav.Link>
+                                <Nav.Link as={Link} className="text-dark" to="/login">Login</Nav.Link>
                         }
 
                     </Navbar.Collapse>

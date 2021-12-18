@@ -15,7 +15,7 @@ const Register = () => {
         const newLoginData = { ...loginData };
         newLoginData[field] = value;
         setLoginData(newLoginData);
-        console.log(field, value);
+        // console.log(field, value);
     }
     const handleSignIn = e => {
         if (loginData.password !== loginData.password2) {

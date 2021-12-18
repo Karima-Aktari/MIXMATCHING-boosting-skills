@@ -32,7 +32,7 @@ const Login = () => {
     };
 
     return (
-        <div className="row py-4 mx-auto bg-dark h-100 py-5">
+        <div className="row py-4 mx-auto bg-dark text-light h-100 py-5">
             <div className="col-md-6 col-12 py-5">
                 <form onSubmit={handleSignIn}>
                     <h1 className="text-info p-2">Please Login</h1>
