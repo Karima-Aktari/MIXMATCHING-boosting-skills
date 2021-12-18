@@ -7,15 +7,15 @@ const Products = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/winter')
+        fetch('https://stormy-brushlands-89131.herokuapp.com/winter')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
 
     return (
-        <div className="bg-dark py-4">
+        <div className="bg-dark text-white py-3">
             <h1>Product Collections {products.length}</h1>
-            <div className="row mx-auto p-4 text-white">
+            <div className="row mx-auto p-3 text-white">
                 {
                     products?.slice(0, 3).map(product => <Product
                         key={product._id}

@@ -3,6 +3,7 @@ import Navigation from '../../Shared/Navigation/Navigation';
 import Header from '../../Shared/Header/Header';
 import Footer from '../../Shared/Footer/Footer';
 import Products from '../Products/Products';
+import ShowReviews from '../ShowReviews/ShowReviews';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <Header></Header>
             <h1> This is home</h1>
             <Products></Products>
+            <ShowReviews></ShowReviews>
             <Footer></Footer>
         </div>
     );

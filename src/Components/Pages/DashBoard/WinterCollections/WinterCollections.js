@@ -11,7 +11,7 @@ const WinterCollections = () => {
     }, [])
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/deleteWinter/${id}`
+        const url = `https://stormy-brushlands-89131.herokuapp.com/deleteWinter/${id}`
         fetch(url, {
             method: "DELETE",
             headers: { "content-type": "application.json" }

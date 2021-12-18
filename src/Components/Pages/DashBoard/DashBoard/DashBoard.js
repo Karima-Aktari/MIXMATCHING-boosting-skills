@@ -1,7 +1,9 @@
 import React from 'react';
 import { NavLink, Link, Outlet } from 'react-router-dom';
+import useAuth from '../../../Hooks/useAuth';
 
 const DashBoard = () => {
+    const { admin } = useAuth();
     return (
         <div>
             <div className="row mx-auto">
@@ -9,29 +11,32 @@ const DashBoard = () => {
                 <div className="col-12 col-md-2 bg-light text-dark py-4">
                     <nav className=" bg-secondary py-4">
                         <NavLink to="/dashBoard" className="py-4">DashBoard</NavLink>
-                        <Link to={`/dashBoard/addWinter`}>
-                            <li>Add Product</li>
-                        </Link>
-                        <Link to={`/dashBoard/winterCollections`}>
-                            <li>Winter Collections</li>
-                        </Link>
-                        <Link to={`/dashBoard/manageAllOrders`}>
-                            <li>Manage Orders</li>
-                        </Link>
-                        <Link to={`/dashBoard/makeAdmin`}>
-                            <li>Add Admin</li>
-                        </Link>
 
-                        {/* <Link to={`/dashBoard/payment`}>
+                        {admin && <div>
+                            <Link to={`/dashBoard/addWinter`}>
+                                <li>Add Product</li>
+                            </Link>
+                            <Link to={`/dashBoard/winterCollections`}>
+                                <li>Winter Collections</li>
+                            </Link>
+                            <Link to={`/dashBoard/manageAllOrders`}>
+                                <li>Manage Orders</li>
+                            </Link>
+                            <Link to={`/dashBoard/makeAdmin`}>
+                                <li>Add Admin</li>
+                            </Link>
+                        </div>}
+                        {admin || <div>
+                            {/* <Link to={`/dashBoard/payment`}>
                             <li> Payment</li>
                         </Link> */}
-                        <Link to={`/dashBoard/myOrders`}>
-                            <li>My Orders</li>
-                        </Link>
-                        <Link to={`/dashBoard/review`}>
-                            <li>Review</li>
-                        </Link>
-
+                            <Link to={`/dashBoard/myOrders`}>
+                                <li>My Orders</li>
+                            </Link>
+                            <Link to={`/dashBoard/reviews`}>
+                                <li>Reviews</li>
+                            </Link>
+                        </div>}
                     </nav>
 
                 </div>

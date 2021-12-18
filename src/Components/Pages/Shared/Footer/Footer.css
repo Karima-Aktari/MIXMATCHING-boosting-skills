@@ -1,0 +1,16 @@
+.footer-background{
+    background-color: rgb(9, 22, 48);
+    color:rgba(138, 10, 85, 0.842);
+}
+.quick-link a{
+    text-decoration: none;
+    color:rgba(250, 194, 245, 0.863);
+}
+
+@media only screen and (max-width:688px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

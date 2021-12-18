@@ -9,7 +9,7 @@ const MakeAdmin = () => {
 
     const handleAdminSubmit = (e) => {
         const user = { email };
-        fetch('http://localhost:5000/users/admin', {
+        fetch('https://stormy-brushlands-89131.herokuapp.com/users/admin', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -19,8 +19,8 @@ const MakeAdmin = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.modifiedCount) {
-                    setEmail('');
                     alert('Added Success');
+                    setEmail('');
                 }
 
             })
@@ -30,7 +30,7 @@ const MakeAdmin = () => {
 
     return (
         <div className="p-4">
-            <h1 className="bg-success text-dark p-3 rounded-3">Add As An admin</h1>
+            <h1 className="bg-success text-dark p-3 rounded-3">Add As An Admin</h1>
             <div>
                 <form onSubmit={handleAdminSubmit}>
                     <input className="px-4 py-1 w-50 rounded-3" onBlur={handleOnBlur} type="email" name="email" placeholder="Enter Your Email" required />

@@ -10,7 +10,7 @@ const AddWinterProduct = () => {
     const { isLoading } = useAuth();
 
     const onSubmit = data => {
-        axios.post('http://localhost:5000/winter', data)
+        axios.post('https://stormy-brushlands-89131.herokuapp.com/winter', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added Successfully');

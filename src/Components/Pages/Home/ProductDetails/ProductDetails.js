@@ -15,7 +15,7 @@ const ProductDetails = () => {
     const { user, isLoading } = useAuth();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/winter/${winterId}`)
+        fetch(`https://stormy-brushlands-89131.herokuapp.com/winter/${winterId}`)
             .then(res => res.json())
             .then(data => setProduct(data));
     }, [])
@@ -24,7 +24,7 @@ const ProductDetails = () => {
         data.order = product;
         data.status = "pending";
         data.date = new Date().toLocaleDateString();
-        axios.post('http://localhost:5000/orders', data)
+        axios.post('https://stormy-brushlands-89131.herokuapp.com/orders', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added Successfully');

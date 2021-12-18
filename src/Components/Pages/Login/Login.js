@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import { Spinner } from 'react-bootstrap';
-// import useFirebase from '../../Hooks/useFirebase';
 
 const Login = () => {
     const [loginData, setLoginData] = useState({});

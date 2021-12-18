@@ -8,7 +8,7 @@ const ManageAllOrders = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://stormy-brushlands-89131.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setOrders(data));
     }, [orders]);
@@ -17,7 +17,7 @@ const ManageAllOrders = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are You Sure To DELETE?');
         if (proceed) {
-            const url = `http://localhost:5000/deleteOrder/${id}`
+            const url = `https://stormy-brushlands-89131.herokuapp.com/deleteOrder/${id}`
             fetch(url, {
                 method: "DELETE",
                 headers: { "content-type": "application.json" }
