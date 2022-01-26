@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="d-flex justify-content-around px-4 footer">
                 <div className="fw-bolder">
                     <h1>MIXMATCHING</h1>
-                    <p>If You are Fashionable person or Lover then MIXMATCHING is always with you!</p>
+                    <p>If You are Fashionable person or Lover then MIXMATCHING is always with you! So don't waste your time</p>
                     <p>You can visit us</p>
                     <div>
                         <div className=" d-flex justify-content-center">
