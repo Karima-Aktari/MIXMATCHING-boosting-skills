@@ -58,13 +58,13 @@ const ManageAllOrders = () => {
         return <Spinner animation="border" variant="warning" />
     };
     return (
-        <div>
-            <h2>Manage Orders</h2>
+        <div className='py-3'>
+            <h2 className='text-green-600 font-bold'>All Orders</h2>
             <div className="row text-center mx-auto">
                 {orders?.map((order) => (
-                    <div className="col-12 col-md-6 col-lg-6 p-3" key={order._id}>
-                        <div className="border rounded-3 p-2 bg-info">
-                            <img src={order?.order.img} className="w-75 rounded-3" alt="" />
+                    <div className="col-12 col-md-6 col-lg-6 py-3" key={order._id}>
+                        <div className="border rounded-3 py-2 bg-dark h-full">
+                            <img src={order?.order.img} className="w-75 rounded-3 mx-auto" alt="" />
                             <h5>{order?.name}</h5>
                             <h4>{order.email}</h4>
                             <h5>{order.address}</h5>

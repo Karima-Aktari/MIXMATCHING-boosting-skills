@@ -24,13 +24,13 @@ const AddWinterProduct = () => {
     };
     return (
         <div className="addProduct bg-white p-4">
-            <h1 className="text-secondary">Add a Latest CAR </h1>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <h1 className="text-secondary">Add a Latest Product</h1>
+            <form className='border rounded-md bg-green-200 text-gray-700' onSubmit={handleSubmit(onSubmit)}>
                 <input {...register("name", { required: true, maxLength: 20 })} placeholder="Name" />
                 <textarea {...register("description")} placeholder="Description" />
                 <input type="number" {...register("price")} placeholder="Price" />
                 <input {...register("img")} placeholder="Image url" />
-                <input type="submit" />
+                <input className='rounded-full bg-purple-500 text-white' type="submit" />
             </form>
         </div>
     );

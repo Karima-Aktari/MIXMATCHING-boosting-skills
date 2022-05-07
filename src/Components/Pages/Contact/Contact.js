@@ -18,7 +18,7 @@ const Contact = () => {
         <div id="contact" className="container border contact-form">
             <div className="my-4 py-4">
                 <h1>Contact Form</h1>
-                <form className="row" style={{ margin: "25px 85px 75px 100px" }}
+                <form className="row rounded-md" style={{ margin: "25px 85px 75px 100px" }}
                     onSubmit={sendEmail}>
                     <label>Name</label>
                     <input type="text" name="name" className="form-control" />

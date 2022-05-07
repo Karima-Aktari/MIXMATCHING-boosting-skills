@@ -33,7 +33,7 @@ const Login = () => {
     return (
         <div className="row py-4 mx-auto bg-dark text-light h-100 py-5">
             <div className="col-md-6 col-12 py-5">
-                <form onSubmit={handleSignIn}>
+                <form className='text-dark' onSubmit={handleSignIn}>
                     <h1 className="text-info p-2">Please Login</h1>
                     <br />
                     <input className="px-4 py-1 rounded-pill" type="email" name="email" onChange={handleOnChange} placeholder="Enter Your Email" required />

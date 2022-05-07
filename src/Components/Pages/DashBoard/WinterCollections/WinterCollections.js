@@ -5,7 +5,7 @@ const WinterCollections = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/winter')
+        fetch('https://stormy-brushlands-89131.herokuapp.com/winter')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
@@ -28,8 +28,8 @@ const WinterCollections = () => {
 
 
     return (
-        <div>
-            <h1>Winter Collections</h1>
+        <div className='py-3 text-rose-900'>
+            <h1 className='font-bold'>All Products Collection</h1>
             <div className="row mx-auto">
                 {
                     products.map(product => <WinterCollection

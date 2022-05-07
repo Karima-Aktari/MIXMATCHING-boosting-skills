@@ -1,9 +1,10 @@
-.contact-form{
-    background: url('https://img.freepik.com/free-vector/abstract-banner-background-with-red-shapes_1361-3348.jpg?size=626&ext=jpg');
+.contact-form {
+    background: url('https://images.wallpaperscraft.com/image/single/scheme_contact_blue_black_30958_300x168.jpg');
     background-repeat: no-repeat;
     margin-top: 50px;
     width: 50%;
     background-position: center;
     background-size: cover;
     color: cornsilk;
+    border-radius: 15px;
 }

@@ -7,7 +7,7 @@ const MoreProduct = ({ product }) => {
     return (
         <div className="col-12 col-md-4 p-4 product">
             <div>
-                <img src={img} className="w-75 rounded-3" alt=""></img>
+                <img src={img} className="w-75 rounded-3 mx-auto" alt=""></img>
                 <h2>{name}</h2>
                 <h3>${price}</h3>
                 <p className="px-4">{description}</p>

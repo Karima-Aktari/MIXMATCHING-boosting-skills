@@ -24,12 +24,14 @@ import MyOrders from './Components/Pages/DashBoard/MyOrders/MyOrders';
 import MakeAdmin from './Components/Pages/DashBoard/MakeAdmin/MakeAdmin';
 import AdminRoute from './Components/Pages/DashBoard/AdminRoute/AdminRoute';
 import Reviews from './Components/Pages/DashBoard/Reviews/Reviews';
+import Navigation from './Components/Pages/Shared/Navigation/Navigation';
 
 function App() {
   return (
     <div className="App">
       <AuthProvider>
         <Router>
+          <Navigation></Navigation>
           <Routes>
             <Route path="/dashBoard" element={<PrivateRoute><DashBoard /></PrivateRoute>} >
               <Route path={`/dashBoard/addWinter`} element={<AdminRoute><AddWinterProduct /></AdminRoute>} />

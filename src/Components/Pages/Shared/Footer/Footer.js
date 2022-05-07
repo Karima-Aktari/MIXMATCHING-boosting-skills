@@ -4,12 +4,12 @@ import "./Footer.css";
 
 const Footer = () => {
     return (
-        <div className="footer-background p-4">
+        <div className="footer-background p-4 mx-auto">
             <div className="d-flex justify-content-around px-4 footer">
                 <div className="fw-bolder">
                     <h1>MIXMATCHING</h1>
-                    <p>If You are Fashionable person or Lover then MIXMATCHING is always with you! So don't waste your time</p>
-                    <p>You can visit us</p>
+                    <p className='mx-auto w-96'>If You are Fashionable person or Lover then MIXMATCHING is always with you! So don't waste your time.</p>
+                    <p className='text-md'>You can visit us</p>
                     <div>
                         <div className=" d-flex justify-content-center">
                             <a rel="noopener noreferrer"

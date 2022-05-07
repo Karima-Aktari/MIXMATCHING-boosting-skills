@@ -30,7 +30,7 @@ const Register = () => {
         return <Spinner animation="border" variant="warning" />
     }
     return (
-        <div>
+        <div className='bg-red-600 h-screen'>
             <h1>{user.displayName}</h1>
             <form onSubmit={handleSignIn}>
                 <h1 className="text-info p-4">Register Your Account</h1>
@@ -46,7 +46,7 @@ const Register = () => {
             </form>
             <h5 className="text-danger">{authError}</h5>
             <br />
-            <p>Already have an account ? <Link to="/login">Login</Link></p>
+            <p className='font-bold'>Already have an account ? <Link to="/login" className='text-white'>Login</Link></p>
         </div>
     );
 };

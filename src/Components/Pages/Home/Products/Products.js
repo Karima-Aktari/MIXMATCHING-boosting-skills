@@ -14,7 +14,7 @@ const Products = () => {
 
     return (
         <div className="bg-dark text-white py-3">
-            <h1>Product Collections {products.length}</h1>
+            <h1>Product Collections</h1>
             <div className="row mx-auto p-3 text-white">
                 {
                     products?.slice(0, 3).map(product => <Product

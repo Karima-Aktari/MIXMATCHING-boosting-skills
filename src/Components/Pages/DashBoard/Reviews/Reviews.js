@@ -20,8 +20,8 @@ const Reviews = () => {
 
 
     return (
-        <div>
-            <h2>Give Your Valuable Opinions</h2>
+        <div className='bg-rose-400 h-100 py-4'>
+            <h2 className='text-dark font-bold'>Give Your Valuable Opinions</h2>
             <form className="py-2 my-4" onSubmit={handleSubmit(onSubmit)}>
                 <input className="w-50 text-center rounded-3 py-2 border-0" defaultValue={user.displayName} {...register("name")} /><br />
 
@@ -32,7 +32,7 @@ const Reviews = () => {
                 <input className="w-50 text-center rounded-3 my-3 py-2 border-0" placeholder="Rating" type="number"{...register("rating", { required: true, min: "0", max: "5" })} /><br />
 
                 <input className="w-50 text-center rounded-3 py-3 border-0" placeholder="Description" defaultValue="" {...register("description")} /><br />
-                <input className="px-4 my-2 rounded-pill" type="submit" />
+                <input className="px-6 py-1 text-lg font-bold my-3 bg-fuchsia-600 text-white rounded-pill w-40" type="submit" />
             </form>
         </div>
     );

@@ -7,37 +7,39 @@ const DashBoard = () => {
     return (
         <div>
             <div className="row mx-auto">
-                <h1 className="bg-info">DashBoard</h1>
-                <div className="col-12 col-md-2 bg-light text-dark py-4">
-                    <nav className=" bg-secondary py-4">
-                        <NavLink to="/dashBoard" className="py-4">DashBoard</NavLink>
+                {/* <h1 className="bg-">DashBoard</h1> */}
+                <div className="col-12 col-md-2 bg-light text-dark">
+                    <div className=''>
+                        <nav className=" bg-dark text-white py-4 h-screen">
+                            <NavLink to="/dashBoard" className="py-4 text-white">DashBoard</NavLink>
 
-                        {admin && <div>
-                            <Link to={`/dashBoard/addWinter`}>
-                                <li>Add Product</li>
-                            </Link>
-                            <Link to={`/dashBoard/winterCollections`}>
-                                <li>Winter Collections</li>
-                            </Link>
-                            <Link to={`/dashBoard/manageAllOrders`}>
-                                <li>Manage Orders</li>
-                            </Link>
-                            <Link to={`/dashBoard/makeAdmin`}>
-                                <li>Add Admin</li>
-                            </Link>
-                        </div>}
-                        {admin || <div>
-                            {/* <Link to={`/dashBoard/payment`}>
+                            {admin && <div className='flex flex-col'>
+                                <Link to={`/dashBoard/addWinter`} className="py-2 text-white">
+                                    Add Product
+                                </Link>
+                                <Link to={`/dashBoard/winterCollections`} className="py-2 text-white">
+                                    Products Collection
+                                </Link>
+                                <Link to={`/dashBoard/manageAllOrders`} className="py-2 text-white">
+                                    Manage Orders
+                                </Link>
+                                <Link to={`/dashBoard/makeAdmin`} className="py-2 text-white">
+                                    Add Admin
+                                </Link>
+                            </div>}
+                            {admin || <div className='flex flex-col'>
+                                {/* <Link to={`/dashBoard/payment`}>
                             <li> Payment</li>
                         </Link> */}
-                            <Link to={`/dashBoard/myOrders`}>
-                                <li>My Orders</li>
-                            </Link>
-                            <Link to={`/dashBoard/reviews`}>
-                                <li>Reviews</li>
-                            </Link>
-                        </div>}
-                    </nav>
+                                <Link to={`/dashBoard/myOrders`} className="py-2 text-white">
+                                    My Orders
+                                </Link>
+                                <Link to={`/dashBoard/reviews`} className=" text-white">
+                                    Reviews
+                                </Link>
+                            </div>}
+                        </nav>
+                    </div>
 
                 </div>
                 <div className="col-12 col-md-10 bg-light text-success">

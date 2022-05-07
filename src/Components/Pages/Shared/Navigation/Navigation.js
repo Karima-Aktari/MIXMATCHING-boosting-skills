@@ -8,9 +8,9 @@ const Navigation = () => {
     const { user, logout } = useAuth();
     return (
         <>
-            <Navbar bg="light" variant="light" className="text-dark navigation" sticky="top" collapseOnSelect expand="lg">
+            <Navbar bg="info" variant="light" className="text-light navigation" sticky="top" collapseOnSelect expand="lg">
                 <Container>
-                    <Navbar.Brand href="#home">MIXMATCHING</Navbar.Brand>
+                    <Navbar.Brand href="#home" className='font-bold'>MIXMATCHING</Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         {/* <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
@@ -22,9 +22,9 @@ const Navigation = () => {
 
                         {
                             user.email ?
-                                <div>
-                                    <NavLink as={Link} to="/dashBoard">DashBoard</NavLink>
-                                    <Button onClick={logout} variant="light">Logout</Button>
+                                <div className='my-auto'>
+                                    <NavLink as={Link} to="/dashBoard" >DashBoard</NavLink>
+                                    <Button onClick={logout} className='mx-1'>Logout</Button>
                                     <Navbar.Text>
                                         Signed in as: <a href="#login">{user.displayName}</a>
                                     </Navbar.Text>

@@ -20,11 +20,11 @@ const MyOrders = () => {
     return (
         <div className="p-4 mx-auto">
             <h1>My Orders List:- {orders.length}</h1>
-            <div className="row text-center mx-auto">
+            <div className="row text-center mx-auto py-3">
                 {orders?.map((order) => (
                     <div className="col-12 col-lg-6" key={order._id}>
-                        <div className="border rounded-3 p-1 py-3 bg-info">
-                            <img src={order?.order.img} className="w-75 rounded-3" alt="" />
+                        <div className="border rounded-3 p-1 py-3 bg-orange-300 h-full">
+                            <img src={order?.order.img} className="w-75 rounded-3 mx-auto" alt="" />
                             <h5>{order?.name}</h5>
                             <h4>{order.email}</h4>
                             <h5>{order.address}</h5>
