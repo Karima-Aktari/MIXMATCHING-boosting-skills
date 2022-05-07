@@ -11,15 +11,15 @@ const ShowReviews = () => {
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])
-    console.log(reviews)
+
     return (
-        <div className=" bg-info py-4 text-secondary">
+        <div className=" bg-primary py-4 text-secondary mx-auto">
             <h1>Consumer reviews</h1>
             <div className="row mx-auto text-dark">
                 {
                     reviews.map(review =>
-                        <div key={review._id} className="col-12 col-lg-4 p-2">
-                            <div className="bg-light rounded-3 py-3 w-100 mx-4 reviews">
+                        <div key={review._id} className="col-12 col-md-6 col-lg-4 p-2">
+                            <div className="bg-info rounded-3 py-3 w-100 mx-auto reviews h-100">
                                 <h2>{review.name}</h2>
                                 <h2>{review.email}</h2>
                                 <h5>{review.description}</h5>

@@ -1,7 +1,8 @@
-.reviews:hover{
-    transform: scale(1.2);
+.reviews:hover {
+    transform: scale(1.1);
     transition: transform 1s;
 }
-.reviews{
+
+.reviews {
     max-width: 85%;
 }

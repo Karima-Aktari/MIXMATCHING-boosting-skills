@@ -37,7 +37,7 @@ const ManageAllOrders = () => {
     const handleUpdate = (id) => {
         const proceed = window.confirm('Are you sure to shipped the order?');
         if (proceed) {
-            const url = `http://localhost:5000/orders/${id}`
+            const url = `https://stormy-brushlands-89131.herokuapp.com/orders/${id}`
             fetch(url, {
                 method: "PUT",
                 headers: { "content-type": "application.json" },
