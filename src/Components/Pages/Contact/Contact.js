@@ -15,9 +15,9 @@ const Contact = () => {
     }
 
     return (
-        <div id="contact" className="container border contact-form">
-            <div className="my-4 py-4">
-                <h1>Contact Form</h1>
+        <div id="contact" className="container mx-auto border contact-form">
+            <div className="container my-4 py-4">
+                <h1 className='text-4xl'>Contact Form</h1>
                 <form className="row rounded-md" style={{ margin: "25px 85px 75px 100px" }}
                     onSubmit={sendEmail}>
                     <label>Name</label>

@@ -11,7 +11,7 @@ const MoreProduct = ({ product }) => {
                 <h2>{name}</h2>
                 <h3>${price}</h3>
                 <p className="px-4">{description}</p>
-                <Link to={`/winter/${_id}`}><button className="btn btn-info">Details</button></Link>
+                <Link to={`/winter/${_id}`}><button className="btn btn-info my-1">Details</button></Link>
             </div>
         </div>
     );

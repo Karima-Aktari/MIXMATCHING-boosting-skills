@@ -14,16 +14,16 @@ const ShowReviews = () => {
 
     return (
         <div className=" bg-blue-800 py-4 text-secondary mx-auto">
-            <h1 className='text-light'>Consumer reviews</h1>
+            <h1 className='text-light text-4xl'>Consumer reviews</h1>
             <div className="row mx-auto text-dark">
                 {
                     reviews.map(review =>
                         <div key={review._id} className="col-12 col-md-6 col-lg-4 p-2">
-                            <div className="bg-info rounded-3 py-3 w-100 mx-auto reviews h-100">
-                                <h2>{review.name}</h2>
-                                <h2>{review.email}</h2>
-                                <h5>{review.description}</h5>
-                                <h4>{review.date}</h4>
+                            <div className="bg-info rounded-3 p-3 w-100 mx-auto reviews h-100">
+                                <h2 className='text-2xl'>{review.name}</h2>
+                                <h2 className='text-2xl'>{review.email}</h2>
+                                <h5 className='text-xl'>{review.description}</h5>
+                                <h5 className='text-xl'>{review.date}</h5>
                                 <p className=" mb-1 fs-5">
                                     <Rating initialRating={review.rating} emptySymbol="far fa-star text-warning"
                                         fullSymbol="fas fa-star text-warning" readonly>

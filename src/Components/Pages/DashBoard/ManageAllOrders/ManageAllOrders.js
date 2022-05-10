@@ -59,20 +59,22 @@ const ManageAllOrders = () => {
     };
     return (
         <div className='py-3'>
-            <h2 className='text-green-600 font-bold'>All Orders</h2>
+            <h2 className='text-green-600 font-bold text-4xl'>All Orders</h2>
             <div className="row text-center mx-auto">
                 {orders?.map((order) => (
                     <div className="col-12 col-md-6 col-lg-6 py-3" key={order._id}>
-                        <div className="border rounded-3 py-2 bg-dark h-full">
+                        <div className="border rounded-3 py-3 bg-dark h-full">
                             <img src={order?.order.img} className="w-75 rounded-3 mx-auto" alt="" />
-                            <h5>{order?.name}</h5>
-                            <h4>{order.email}</h4>
-                            <h5>{order.address}</h5>
-                            <h5>{order.city}</h5>
-                            <h5>Mobile-No.:{order.phone}</h5>
-                            <h5>Brand:{order?.order.name}</h5>
-                            <h5>${order?.order.price}</h5>
-                            <h6>Date:-{order?.date}</h6>
+                            <div className='py-2 text-xl'>
+                                <h5 className='text-2xl'>{order?.name}</h5>
+                                <h4 className='text-xl'>{order.email}</h4>
+                                <h5 className='text-xl'>{order.address}</h5>
+                                <h5 className='text-xl'>{order.city}</h5>
+                                <h5 className='text-xl'>Mobile-No.:{order.phone}</h5>
+                                <h5 className='text-xl'>Brand:{order?.order.name}</h5>
+                                <h5 className='text-xl'>${order?.order.price}</h5>
+                                <h6>Date:-{order?.date}</h6>
+                            </div>
                             <button onClick={() => handleUpdate(order._id)} className="btn bg-warning mx-2 px-2">{order.status}</button>
                             <button onClick={() => handleDelete(order._id)} className="btn btn-danger px-4">Delete</button>
                         </div>

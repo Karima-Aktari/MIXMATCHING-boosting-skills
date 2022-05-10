@@ -11,8 +11,8 @@ const MoreProducts = () => {
             .then(data => setProducts(data))
     }, [])
     return (
-        <div>
-            <h1>Winter Collections</h1>
+        <div className='py-4'>
+            <h1 className='text-4xl'>Products Collection</h1>
             <div className="row mx-auto">
                 {
                     products.map(product => <MoreProduct

@@ -29,7 +29,7 @@ const WinterCollections = () => {
 
     return (
         <div className='py-3 text-rose-900'>
-            <h1 className='font-bold'>All Products Collection</h1>
+            <h1 className='font-bold text-4xl'>All Products Collection</h1>
             <div className="row mx-auto">
                 {
                     products.map(product => <WinterCollection

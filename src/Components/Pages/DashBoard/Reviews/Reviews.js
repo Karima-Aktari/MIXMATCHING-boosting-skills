@@ -21,7 +21,7 @@ const Reviews = () => {
 
     return (
         <div className='bg-rose-400 h-100 py-4'>
-            <h2 className='text-dark font-bold'>Give Your Valuable Opinions</h2>
+            <h2 className='text-dark text-4xl font-bold'>Give Your Valuable Opinions</h2>
             <form className="py-2 my-4" onSubmit={handleSubmit(onSubmit)}>
                 <input className="w-50 text-center rounded-3 py-2 border-0" defaultValue={user.displayName} {...register("name")} /><br />
 

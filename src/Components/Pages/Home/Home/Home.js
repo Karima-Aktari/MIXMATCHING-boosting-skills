@@ -9,7 +9,7 @@ import DesignerCollection from '../DesignerCollection/DesignerCollection';
 const Home = () => {
     return (
         <div className="bg-dark">
-            <h1 className="text-danger">Welcome to Your MIXMATCHING!</h1>
+            <h1 className="text-danger text-2xl">Welcome to Your MIXMATCHING!</h1>
             <Header></Header>
             <Products></Products>
             <DesignerCollection />

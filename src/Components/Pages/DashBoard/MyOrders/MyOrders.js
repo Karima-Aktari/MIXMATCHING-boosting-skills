@@ -19,7 +19,7 @@ const MyOrders = () => {
 
     return (
         <div className="p-4 mx-auto">
-            <h1>My Orders List:- {orders.length}</h1>
+            <h1 className='text-4xl'>My Orders List:- {orders.length}</h1>
             <div className="row text-center mx-auto py-3">
                 {orders?.map((order) => (
                     <div className="col-12 col-lg-6" key={order._id}>

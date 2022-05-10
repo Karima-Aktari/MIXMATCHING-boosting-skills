@@ -9,7 +9,7 @@ const WinterCollection = ({ product, handleDelete }) => {
                 <h2>{name}</h2>
                 <h3>${price}</h3>
                 <p className="px-4">{description}</p>
-                <button onClick={() => handleDelete(product._id)} className="btn btn-danger px-4">Delete</button>
+                <button onClick={() => handleDelete(product._id)} className="btn btn-danger px-4 my-1">Delete</button>
             </div>
         </div>
     );

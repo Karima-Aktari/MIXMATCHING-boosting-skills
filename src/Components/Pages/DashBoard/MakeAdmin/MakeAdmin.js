@@ -30,8 +30,8 @@ const MakeAdmin = () => {
 
     return (
         <div className="p-4">
-            <h1 className="bg-green-400 text-dark p-3 rounded-3">Add As An Admin</h1>
-            <div>
+            <h1 className="bg-green-400 text-dark text-4xl p-3 rounded-3">Add As An Admin</h1>
+            <div className='my-2'>
                 <form className='bg-red-500 py-7 rounded-md' onSubmit={handleAdminSubmit}>
                     <input className="px-4 py-3 w-50 rounded-3" onBlur={handleOnBlur} type="email" name="email" placeholder="Enter Your Email" required />
                     <br />
