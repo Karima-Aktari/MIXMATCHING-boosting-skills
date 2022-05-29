@@ -43,7 +43,7 @@ const DesignerCollection = () => {
 
     return (
         <div>
-            <div className="bg-rose-300 w-full min-h-screen py-5">
+            <div className="bg-rose-500 w-full min-h-screen py-5">
                 <h1 className="font-bold text-4xl">Designer Collections</h1>
                 <div className=" container mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     {
