@@ -19,7 +19,7 @@ const ShowReviews = () => {
                 {
                     reviews.map(review =>
                         <div key={review._id} className="col-12 col-md-6 col-lg-4 p-2">
-                            <div className="bg-pink-600 rounded-3 p-3 w-100 mx-auto reviews h-100">
+                            <div className="bg-light rounded-3 p-3 w-100 mx-auto reviews h-100">
                                 <h2 className='text-2xl'>{review.name}</h2>
                                 <h2 className='text-2xl'>{review.email}</h2>
                                 <h5 className='text-xl'>{review.description}</h5>

@@ -5,7 +5,7 @@ import "./Footer.css";
 const Footer = () => {
     return (
         <div className="footer-background p-4 mx-auto">
-            <div className="d-flex justify-content-around px-4 py-2 footer">
+            <div className="d-flex justify-content-around sm:flex-col md:flex-col lg:flex-row px-4 py-2 footer">
                 <div className="fw-bolder">
                     <h1 className='text-4xl'>MIXMATCHING</h1>
                     <p className='mx-auto w-96 py-1'>If You are Fashionable person or Lover then MIXMATCHING is always with you! So don't waste your time.</p>
